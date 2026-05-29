@@ -1,0 +1,295 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial, sans-serif;
+  background:#f5f5f5;
+  color:#333;
+  line-height:1.6;
+}
+
+/* HEADER */
+
+header{
+  background:#111;
+  color:white;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 8%;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.logo{
+  font-size:30px;
+  font-weight:bold;
+  color:#00b894;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+  transition:0.3s;
+  font-weight:bold;
+}
+
+nav a:hover{
+  color:#00b894;
+}
+
+/* HERO SECTION */
+
+.hero{
+  height:90vh;
+  background:
+  linear-gradient(rgba(0,0,0,0.6),
+  rgba(0,0,0,0.6)),
+  url('https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1200');
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+  padding:20px;
+}
+
+.hero-text h1{
+  font-size:65px;
+  margin-bottom:20px;
+}
+
+.hero-text p{
+  font-size:22px;
+  margin-bottom:25px;
+}
+
+/* BUTTONS */
+
+button{
+  background:#00b894;
+  color:white;
+  border:none;
+  padding:13px 28px;
+  border-radius:8px;
+  cursor:pointer;
+  transition:0.3s;
+  font-size:16px;
+}
+
+button:hover{
+  background:#019875;
+  transform:translateY(-3px);
+}
+
+/* FEATURES */
+
+.features{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  padding:70px 8%;
+  flex-wrap:wrap;
+}
+
+.feature-box{
+  background:white;
+  width:300px;
+  padding:35px;
+  text-align:center;
+  border-radius:15px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.feature-box:hover{
+  transform:translateY(-10px);
+}
+
+/* PRODUCTS */
+
+.page-title{
+  text-align:center;
+  margin:50px 0 30px;
+  font-size:40px;
+}
+
+.product-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+  padding:0 8% 70px;
+}
+
+.product-card{
+  background:white;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  transition:0.3s;
+  text-align:center;
+}
+
+.product-card:hover{
+  transform:translateY(-8px);
+}
+
+.product-card img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+}
+
+.product-card h3{
+  margin-top:20px;
+}
+
+.product-card p{
+  margin:15px 0;
+  font-size:18px;
+  color:#00b894;
+}
+
+/* PRODUCT DETAILS */
+
+.product-details{
+  display:flex;
+  gap:50px;
+  padding:70px 8%;
+  flex-wrap:wrap;
+  align-items:center;
+}
+
+.product-details img{
+  width:420px;
+  border-radius:15px;
+}
+
+.details{
+  max-width:500px;
+}
+
+.price{
+  color:#00b894;
+  font-size:32px;
+  margin:20px 0;
+}
+
+/* CONTACT */
+
+.contact-section{
+  padding:70px 8%;
+}
+
+.contact-section h1{
+  text-align:center;
+  margin-bottom:35px;
+  font-size:40px;
+}
+
+.contact-form{
+  max-width:650px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+  padding:16px;
+  border-radius:8px;
+  border:1px solid #ccc;
+  font-size:16px;
+}
+
+.contact-form textarea{
+  resize:none;
+}
+
+/* JOURNAL */
+
+.journal-section{
+  padding:70px 8%;
+}
+
+.journal-section h1{
+  text-align:center;
+  margin-bottom:40px;
+  font-size:42px;
+}
+
+.journal-card{
+  background:white;
+  padding:35px;
+  margin-bottom:25px;
+  border-radius:15px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.journal-card:hover{
+  transform:translateY(-5px);
+}
+
+.journal-card h2{
+  margin-bottom:15px;
+}
+
+/* FOOTER */
+
+.footer{
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:50px 20px;
+  margin-top:50px;
+}
+
+.social-links{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:15px;
+  margin:25px 0;
+}
+
+.social-links a{
+  text-decoration:none;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+  header{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  nav{
+    text-align:center;
+  }
+
+  .hero-text h1{
+    font-size:42px;
+  }
+
+  .product-details{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .product-details img{
+    width:100%;
+  }
+
+}
